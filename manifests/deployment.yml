@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: hewisauruspipelinesjavascriptdocker 
+  name: hewisauruspipelinesjavascriptdockerr
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      app: hewisauruspipelinesjavascriptdocker
+      app: hewisauruspipelinesjavascriptdockerr
   template:
     metadata:
       labels:
-        app: hewisauruspipelinesjavascriptdocker 
+        app: hewisauruspipelinesjavascriptdockerr
     spec:
       containers:
-        - name: hewisauruspipelinesjavascriptdocker 
+        - name: hewisauruspipelinesjavascriptdockerr
           image: xelloakscicdacr.azurecr.io/hewisauruspipelinesjavascriptdocker
           ports:
           - containerPort: 8080
