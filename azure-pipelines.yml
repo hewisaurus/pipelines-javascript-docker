@@ -15,7 +15,8 @@ variables:
   imageRepository: 'hewisauruspipelinesjavascriptdocker'
   containerRegistry: 'xelloakscicdacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)'
+  #tag: '$(Build.BuildId)'
+  tag: '$(Date:yyyyMMdd)'
   imagePullSecret: 'xelloakscicdacrf9f8-auth'
 
   # Agent VM image name
