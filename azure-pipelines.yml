@@ -16,7 +16,7 @@ variables:
   containerRegistry: 'xelloakscicdacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   #tag: '$(Build.BuildId)'
-  tag: $(Build.BuildNumber)'
+  tag: $(Build.BuildId)'
   imagePullSecret: 'xelloakscicdacrf9f8-auth'
 
   # Agent VM image name
